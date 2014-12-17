@@ -9,6 +9,13 @@ git checkout -b mybranch origin/myremotebranch
 ```
 Best practice would be to name mybranch exactly the same as myremotebranch, unless there is a good reason to do otherwise.
 
+
+Push a local branch to remote (and track)
+-------------------------------------------------------
+```
+git push -u origin mybranch
+```
+
 Rebasing periodically while working on a branch
 ----------------------------------------------------------------
 
