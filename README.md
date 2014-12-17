@@ -5,7 +5,8 @@ Scholarly Technology Group Software Development Guidelines
 
 * [Development task workflow](DevelopmentTaskWorkflow.md)
 * [Tools](Tools.md)
-* [Source control](SourceControl.md)
+* [Source control](SourceControl.md):
+    * [Git best practices and tips](Git.md)
 * Coding conventions:
     * [Python](PythonCodingConventions.md)
 * Testing
