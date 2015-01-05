@@ -1,8 +1,8 @@
 Git best practices and tips
 ===================
-
-Create (and check out) a local branch to track a remote branch (i.e. a branch on the github server)
----------------------------------------------------------------------------------------------------
+General practices
+-------------------------
+###Create (and check out) a local branch to track a remote branch (i.e. a branch on the github server)
 
 ```
 git checkout -b mybranch origin/myremotebranch
@@ -10,15 +10,12 @@ git checkout -b mybranch origin/myremotebranch
 Best practice would be to name mybranch exactly the same as myremotebranch, unless there is a good reason to do otherwise.
 
 
-Push a local branch to remote (and track)
--------------------------------------------------------
+###Push a local branch to remote (and track)
 ```
 git push -u origin mybranch
 ```
 
-Rebasing periodically while working on a branch
-----------------------------------------------------------------
-
+###Rebasing periodically while working on a branch
 This is a preferred practice for bringing the latest changes from master instead of using merge because it leaves a cleaner history.
 
 *Be very careful about rebasing public branches.  Since it gets rid of some commits, it can cause problems for other developers doing work on the branch.*
@@ -49,8 +46,7 @@ git rebase master
 git push origin MYBRANCH
 ```
 
-Git squashing before committing a branch to master
----------------------------------------------------------------------
+###Git squashing before committing a branch to master
 
 The effect of squashing is so that when the branch is merged, it's one commit rather than a series of little commits.  We want to keep the commit log of master clean and readable.
 
@@ -93,4 +89,64 @@ git commit
 # push the branch to the remote repo.
 # Seems to require -ff to force it.
 git push -ff origin MYBRANCH
+```
+
+Helpful practices
+----------------------
+###See previous commit
+```
+git show HEAD^
+```
+
+###Compare commits across branches
+```
+# Commits in experiment, but not master
+git log master..experiment
+
+# Opposite
+git log experiment..master
+```
+
+###Interactive staging
+```
+git add -i
+```
+
+###Saving dirty state and return to clean
+Save the dirty state of your working directory and return to a clean state.  State can be re-applied to same or a different branch.
+
+```
+git stash save mychanges
+git checkout anotherbranch
+git stash pop
+```
+
+Useful flags for `git stash`:
+
+* `--keep-index`: Don't stash staged files.
+* `-u`: Stash untracked files as well.
+
+###Remove untracked files and directories
+```
+git clean -f -d
+```
+
+Useful flags for `git clean`:
+
+* `-x`:  Also clean ignored files.
+* `-i`:  Interactive clean.
+
+###Search for code
+```
+git grep -n somfunct
+```
+
+###Search for commits with code
+```
+git log -Ssomefunct --oneline
+```
+
+###History of changes for code
+```
+git log -L :somefunct:somefile.py
 ```
