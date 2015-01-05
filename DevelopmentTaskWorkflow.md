@@ -40,5 +40,5 @@ In general, we follow the [Github Flow](http://scottchacon.com/2011/08/31/github
 
     >These last two steps are repeated until all issues are addressed either by fixing or by documenting in additional tickets for later work.
 
-8.  Tester accepts the pull request (from git command line or by pressing the merge pull request button).
+8.  Tester accepts and merges the pull request, by pressing the green merge button on the pull request, or via the command line. If the button is not green and warns that a manual merge is necessary, then the developer likely did not rebase recently. The developer will then update the branch to achieve a green merge button, and resubmit to the tester.
 9.  Team members with local copies of the feature branch delete them.
