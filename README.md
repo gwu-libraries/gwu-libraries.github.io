@@ -7,11 +7,8 @@ Scholarly Technology Group Software Development Guidelines
 * [Tools](Tools.md)
 * [Source control](SourceControl.md):
     * [Git best practices and tips](Git.md)
-* Coding conventions:
+* [Authoring tickets](Tickets.md)
+* * Coding conventions:
     * [Python](PythonCodingConventions.md)
 * Testing
     * [Python lint testing](PythonLintTesting.md)
- 
-To be written:
-
-* [Authoring tickets](Tickets.md)
