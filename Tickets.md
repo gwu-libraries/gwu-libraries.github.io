@@ -30,8 +30,23 @@ Anatomy of a Ticket
   - When relevant, a screenshot
   - If possible, any potentially relevant areas of code identified
 
-####Tags:
+####Tags (Labels):
+Tagging tickets is optional, but can be very useful.  These tags should be used when applicable:
+- Bug (for defects)
+- Enhancement
+- Wontfix
+- Proposed
+- High Priority.  This tag can be useful for marking critical defects, and for highlighting "must do" enhancements for a milestone.
+
+Multiple tags may certainly be applied to a ticket.
+
+Ad-hoc tags may be created and used as appropriate per project.
+
+A useful feature of Github is the ability to filter issues by label.
 
 ####Assignee:
+- When creating a ticket, this may (and often should) be left empty
+- The Assignee is generally assigned by the project manager, although it depends highly on the project.
 
 ####Milestone:
+- The Milestone is generally assigned by the project manager.
