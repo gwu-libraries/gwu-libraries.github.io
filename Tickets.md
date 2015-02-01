@@ -30,11 +30,13 @@ Anatomy of a Ticket
   - When relevant, a screenshot
   - If possible, any potentially relevant areas of code identified
 
+And in general, comment liberally in the Description section.  Github doesn't charge us per word.  If a discussion about a ticket occurs in real life (and we encourage real-life discussions here), go ahead and add some notes into the ticket to capture the important points of the discussion.
+
 ####Tags (Labels):
 Tagging tickets is optional, but can be very useful.  These tags should be used when applicable:
 - Bug (for defects)
 - Enhancement
-- Wontfix
+- Wontfix.  When tagging a ticket as "Wontfix" and closing it, please add a comment as to the reason.
 - Proposed
 - High Priority.  This tag can be useful for marking critical defects, and for highlighting "must do" enhancements for a milestone.
 
