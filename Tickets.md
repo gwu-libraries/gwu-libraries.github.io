@@ -50,3 +50,11 @@ A useful feature of Github is the ability to filter issues by label.
 
 ####Milestone:
 - The Milestone is generally assigned by the project manager.
+
+Pull Requests Are Github Issues (Tickets) Too
+---------------------------------------------
+
+As far as Github is concerned, a Pull Request ("PR") is just another type of Issue.   We like the creator of a Pull Request to include:
+- A reference back to the ticket, for easier navigation (e.g. "refs #123")
+- Notes telling the tester how to test the PR
+
