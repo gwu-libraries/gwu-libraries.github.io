@@ -22,15 +22,24 @@ Anatomy of a Ticket
 - Titles may be updated/edited later as needed.
 
 ####Description:
-- Descriptions should include #references to other tickets where appropriate.  This helps to navigate between cross-connected issues.  When mentioning other github users, use @mentions, as this will trigger Github to notify each user mentioned. (See [Github's guide to notifications, references, mentions, etc.](https://guides.github.com/features/issues/index.html#notifications).)
-- Defects ("bugs") should include the following:
+The description should concisely, yet sufficiently describe the scope of work and desired result.  It should be specific enough that a pull request addressing this ticket can be tested to determine whether it accurately implements the change.
+
+Descriptions should include #references to other tickets where appropriate.  This helps to navigate between cross-connected issues.  When mentioning other github users, use @mentions, as this will trigger Github to notify each user mentioned. (See [Github's guide to notifications, references, mentions, etc.](https://guides.github.com/features/issues/index.html#notifications).)
+
+Defects ("bugs") should include the following:
   - Steps to reproduce the defect, and any relevant context such as the environment/server where the defect was observed, the browser used
   - The result deemed defective
   - The expected result
   - When relevant, a screenshot
   - If possible, any potentially relevant areas of code identified
 
-And in general, comment liberally in the Description section.  Github doesn't charge us per word.  If a discussion about a ticket occurs in real life (and we encourage real-life discussions here), go ahead and add some notes into the ticket to capture the important points of the discussion.
+##### Adding comments
+
+In general, *do* comment liberally in the Description section.  Github doesn't charge us per word.
+
+If a discussion about a ticket occurs in real life (and we encourage real-life discussions here), go ahead and add some notes into the ticket to capture the important points of the discussion.  Adding this into the ticket is helpful for many reasons, including:
+- It helps to clarify the conclusions
+- Everybody can refer back to it later, rather than relying on memory
 
 ####Tags (Labels):
 Tagging tickets is optional, but can be very useful.  These tags should be used when applicable:
