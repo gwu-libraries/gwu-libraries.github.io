@@ -5,7 +5,7 @@ Development task workflow
 
 In general, we follow the [Github Flow](http://scottchacon.com/2011/08/31/github-flow.html).  The following provides some additional clarifications on our flavor of the workflow:
 
-1.  For each development task, a team member creates a [tickets](Tickets.md).  The ticket is assigned to a developer and optionally to a milestone.
+1.  For each development task, a team member creates a [ticket](Tickets.md).  The ticket is assigned to a developer and optionally to a milestone.
 2.  For each ticket, the developer creates a feature branch.  The feature branch should be named `t<ticket #>-<short description with words - separated>`, e.g., `t286-export-stream`.  For example, to create and checkout a feature branch:
 
         git checkout master
