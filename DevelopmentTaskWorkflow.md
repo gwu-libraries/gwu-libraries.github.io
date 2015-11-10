@@ -9,6 +9,7 @@ In general, we follow the [Github Flow](http://scottchacon.com/2011/08/31/github
 2.  For each ticket, the developer creates a feature branch.  The feature branch should be named `t<ticket #>-<short description with words - separated>`, e.g., `t286-export-stream`.  For example, to create and checkout a feature branch:
 
         git checkout master
+        git pull origin master
         git checkout -b t286-export-stream
 
     > Note:  In general, 1 development task = 1 ticket = 1 feature branch.  However, where appropriate, variations are acceptable.  In particular, a development task may be broken up into multiple tickets or multiple related tickets may be included in a single feature branch.
@@ -17,12 +18,12 @@ In general, we follow the [Github Flow](http://scottchacon.com/2011/08/31/github
 
     Periodically, the developer should get the latest commits from master using rebase:
     
-        git checkout mybranch
+        git checkout t286-export-stream
         git rebase master
         
-4.  When completed with the task or wanting to collaborate with other team members, the developer pushes the branch to origin.
+4.  When completed with the task, wanting to store your changes in the github repo (even if not complete), or wanting to collaborate with other team members, the developer pushes the branch to origin.
 
-        git push -u origin mybranch
+        git push -u origin t286-export-stream
         
     **Caution:** If other developers are working on your branch and you rebase, you can really mess things up.  Once a feature branch has been pushed to origin, only rebase if no one else is working on it or are completed working on it.
 
