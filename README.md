@@ -12,8 +12,10 @@ We intend to continually iterate, refine, and experiment with the various practi
 * [Project charters](ProjectCharters.md)
 * [Development task workflow](DevelopmentTaskWorkflow.md)
 * [Tools](Tools.md)
-
-
-To be written:
-
+* [Source control](SourceControl.md):
+    * [Git best practices and tips](Git.md)
 * [Authoring tickets](Tickets.md)
+* * Coding conventions:
+    * [Python](PythonCodingConventions.md)
+* Testing
+    * [Python lint testing](PythonLintTesting.md)
