@@ -50,7 +50,7 @@ git push origin MYBRANCH
 
 The effect of squashing is so that when the branch is merged, it's one commit rather than a series of little commits.  We want to keep the commit log of master clean and readable.
 
-`git commit --squash`` gives you a chance to compose a single commit message, so you'll want to think ahead about what that message should be.  It should describe what changes this commit entails.
+`git commit --squash` gives you a chance to compose a single commit message, so you'll want to think ahead about what that message should be.  It should describe what changes this commit entails.
 
 Here is a recommended series of steps to follow:
 
