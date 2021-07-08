@@ -91,6 +91,20 @@ git commit
 git push -ff origin MYBRANCH
 ```
 
+###Alternative for squashing using interactive rebase
+```
+git checkout MYBRANCH
+git rebase -i master
+
+# You will be taken to an editor listing commits.
+# Leave the first commit as is and change all others
+# to "fixup" or "f". Exit the editor. You will be taken
+# to another editor. Change the commit message to what you want
+# the merged commit message to be and exit the editor.
+
+git push origin MYBRANCH --force
+```
+
 Helpful practices
 ----------------------
 ### See previous commit
